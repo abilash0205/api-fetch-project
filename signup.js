@@ -34,7 +34,7 @@ function validateInputs(){
 
     if(isValid){
         window.alert('Created account successfully')
-        window.location.href = "./API Fetching/home.html"
+        window.location.href = "home.html"
     }
 }
 

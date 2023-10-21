@@ -11,7 +11,7 @@ signInForm.addEventListener('submit', (e) => {
     const inputPassword = signInPassword.value.trim()
     if(inputEmail === retrievedEmail && inputPassword === retrievedPassword){
         alert('Logged in successfully')
-        window.location.href = "./API Fetching/home.html"
+        window.location.href = "home.html"
     } else {
         alert('Invalid username or password')
     }
