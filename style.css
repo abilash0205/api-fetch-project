@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*! --------------------Login and Sign-up html styles-------------------- */
+html,
+body {
+  height: 100%;
+  font-size: 18px;
+}
+
+#signin {
+  display: none;
+}
+
+.form-signin,
+.form-signup {
+  max-width: 450px;
+  border-radius: 5px;
+}
+
+.form-signin .form-floating:focus-within,
+.form-signup .form-floating:focus-within {
+  z-index: 1;
+}
+
+.form-signin .form-floating input[type="email"],
+.form-signup .form-floating input[type="text"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-signin .form-floating input[type="password"],
+.form-signup .form-floating input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signup .form-floating input[type="email"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 5px;
+}

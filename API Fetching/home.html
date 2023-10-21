@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Fetch</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--! Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#">API Registrations</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#registrations">Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--! Loading Spinner -->
+    <div class="d-flex justify-content-center">
+      <div id="loading">
+        <img src="Spinner.svg" alt="" />
+      </div>
+    </div>
+
+    <!--! API Data's -->
+    <h1 class="text-center">Registered Persons</h1>
+    <table class="table table-bordered table-striped" id="registrations"></table>
+    <span class="text-center h3 d-none" id="errorMessage"></span>
+
+    <footer class="container mt-4" id="contact">
+      <h4>API Registrations Process</h4>
+      <div class="d-flex justify-content-between mt-3">
+        <div class="">
+          <a
+            class="text-decoration-none"
+            href="https://jsonplaceholder.typicode.com/comments"
+            target="_blank"
+            rel="noopener"
+            >API Link</a
+          >
+        </div>
+        <div class="">
+          <address>
+            Suite 176 178 Katie Dale, New Norbert, TX 92242
+          </address>
+          <p><a class="text-decoration-none" href="mailto:pyshchevyuv@barrettkern.com">pyshchevyuv@barrettkern.com</a></p>
+        </div>
+      </div>
+
+      <p class="back-to-top">
+        <a href="#" class="text-decoration-none"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"
+            /></svg
+        ></a>
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
